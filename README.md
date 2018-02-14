@@ -1,15 +1,32 @@
-### Volt AVS Extension 
+### Boilerplate for Firefox/Chrome extension written in typescript
 
-Make it possible to call AVS from localhost:8080
+## What's in da box
+- empty popup page
+- empty options page
+- empty background and contentscript
+- Dependency injection managed by [Awilix](https://github.com/jeffijoe/awilix)
+- Promisified Storage service
+
+## Usefull command
 
 ```bash
 yarn
 
+yarn lint
+yarn cz
+
 yarn chrome-build
+yarn firefox-build
+yarn build
 ```
+or
+```bash
+npm i
 
-![alt text](https://doc-14-80-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/cevuf30n3qpnsqkg7eruq4dsncv56ohp/1517860800000/12381267961750514940/*/1Qn3m-VL-1MTGxU2ytLX5tlkQqfhiAIe4)
+npm run lint
+npm run cz
 
-load the extension located in build/chrome
-
-if you want to enable cors go to the options
+npm run chrome-build
+npm run firefox-build
+npm run build
+```
