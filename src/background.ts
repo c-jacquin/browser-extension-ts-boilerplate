@@ -1,12 +1,12 @@
 import container from './services';
+import Background from './services/Background';
 import Config from './services/Config';
-import Main from './services/Main';
 
 (async () => {
   const config = container.resolve<Config>('config');
-  const main = container.resolve<Main>('main');
+  const background = container.resolve<Background>('background');
 
   await config.loadInitialState();
 
-  main.start();
+  background.start();
 })();

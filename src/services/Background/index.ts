@@ -1,16 +1,15 @@
 import autobind from 'autobind-decorator';
 
-import BrowserAction from '../_typings_/IBrowserAction';
 import Config from '../Config';
 
-class Main {
+class Background {
   constructor(
-    private browserAction: BrowserAction,
+    private browserAction: typeof browser.browserAction,
     private config: Config,
-    private storage: Storage,
+    private storage: typeof browser.storage,
   ) {
     browserAction.onClicked.addListener(this.handleClick);
-    storage.onChanged(this.handleStorageChanged);
+    storage.onChanged.addListener(this.handleStorageChanged);
   }
 
   public start() {
@@ -28,4 +27,4 @@ class Main {
   }
 }
 
-export default Main;
+export default Background;
