@@ -1,4 +1,4 @@
-import container from './services';
+import container from '../../services';
 
 (async () => {
   // manage option page

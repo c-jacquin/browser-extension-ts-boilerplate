@@ -7,8 +7,8 @@ module.exports = {
   entry: {
     background: path.join(process.cwd(), 'src/background.ts'),
     content_script: path.join(process.cwd(), 'src/content_script.ts'),
-    options: path.join(process.cwd(), 'src/options.ts'),
-    popup: path.join(process.cwd(), 'src/popup.ts'),
+    options: path.join(process.cwd(), 'src/views/options/index.ts'),
+    popup: path.join(process.cwd(), 'src/views/popup/index.ts'),
   },
   module: {
     loaders: [
