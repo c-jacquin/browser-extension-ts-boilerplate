@@ -5,7 +5,7 @@
 - empty options page
 - empty background and contentscript
 - Dependency injection managed by [Awilix](https://github.com/jeffijoe/awilix)
-- Promisified Storage service
+- Promisified browser/chrome apis
 
 ## Usefull command
 

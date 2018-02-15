@@ -1,6 +1,6 @@
 {
   "name": "volt-avs-extension",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "an extension to work with avs backend",
   "scripts": {
     "precommit": "lint-staged",
